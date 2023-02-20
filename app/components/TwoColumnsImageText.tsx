@@ -3,9 +3,11 @@ import {Link} from './Link';
 
 type Props = {
   isReserve: boolean;
+  title: string;
+  description: string;
 };
 
-export function TwoColumnsImageText({isReserve}: Props) {
+export function TwoColumnsImageText({isReserve, title, description}: Props) {
   return (
     <div
       className={`relative md:flex ${
@@ -20,11 +22,8 @@ export function TwoColumnsImageText({isReserve}: Props) {
         </Link>
       </div>
       <div className="md:w-2/4 md:p-28 pt-10">
-        <Heading isItalic={true}>Adidas Logos: history and meaning</Heading>
-        <p className="md:pt-8">
-          Ever wondered how the adidas logos came to be? Discover the history of
-          adidas logos and the purpose behind each design evolution, from 1949.
-        </p>
+        <Heading isItalic={true}>{title}</Heading>
+        <p className="md:pt-8 text-black">{description}</p>
       </div>
     </div>
   );
