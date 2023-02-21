@@ -48,7 +48,7 @@ export function Layout({
           title={layout?.shop.name ?? 'Hydrogen'}
           menu={layout?.headerMenu}
         />
-        <main role="main" id="mainContent" className="flex-grow">
+        <main role="main" id="mainContent" className="flex-grow bg-white">
           {children}
         </main>
       </div>

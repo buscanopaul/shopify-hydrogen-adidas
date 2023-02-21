@@ -28,7 +28,7 @@ export function FeaturedCollections({
           return (
             <Link key={collection.id} to={`/collections/${collection.handle}`}>
               <div className="grid gap-4">
-                <div className="card-image bg-primary/5 aspect-square !rounded-none">
+                <div className="card-image bg-primary/5 aspect-square !rounded-none !bg-blue-500">
                   {collection?.image && (
                     <Image
                       alt={`Image of ${collection.title}`}

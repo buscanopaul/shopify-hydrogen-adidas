@@ -21,7 +21,7 @@ export function TwoColumnsImageText({isReserve, title, description}: Props) {
           />
         </Link>
       </div>
-      <div className="md:w-2/4 md:p-28 pt-10">
+      <div className="md:w-2/4 md:p-20 pt-10">
         <Heading isItalic={true}>{title}</Heading>
         <p className="md:pt-8 text-black">{description}</p>
       </div>
