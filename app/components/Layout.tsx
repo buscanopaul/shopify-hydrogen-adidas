@@ -27,6 +27,7 @@ import {
   type EnhancedMenuItem,
 } from '~/lib/utils';
 import type {LayoutData} from '../root';
+import {Cta} from './Cta';
 
 export function Layout({
   children,
@@ -51,6 +52,7 @@ export function Layout({
           {children}
         </main>
       </div>
+      <Cta />
       <Footer menu={layout?.footerMenu} />
     </>
   );
