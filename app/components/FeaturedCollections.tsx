@@ -21,7 +21,6 @@ export function FeaturedCollections({
     <Section {...props} heading={title}>
       <Grid items={items} className="md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
         {collections.map((collection) => {
-          console.log(collection);
           // if (!collection?.image) {
           //   return null;
           // }

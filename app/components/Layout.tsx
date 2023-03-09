@@ -208,7 +208,7 @@ function MobileHeader({
             <IconSearch />
           </button>
           <Input
-            className="text-black"
+            className="text-black bg-black"
             type="search"
             variant="minisearch"
             placeholder="Search"
@@ -270,8 +270,8 @@ function DesktopHeader({
               prefetch="intent"
               className={({isActive}) =>
                 isActive
-                  ? 'pb-1 border-b -mb-px text-black font-bold'
-                  : 'pb-1 text-black'
+                  ? 'pb-1 border-b border-black -mb-px text-black font-bold uppercase'
+                  : 'pb-1 text-black font-bold uppercase'
               }
             >
               {item.title}
@@ -295,7 +295,7 @@ function DesktopHeader({
           className="flex items-center gap-2"
         >
           <Input
-            className="border-black placeholder-gray-500 text-black"
+            className="border-black placeholder-gray-500 text-black searchField"
             type="search"
             variant="minisearch"
             placeholder="Search"

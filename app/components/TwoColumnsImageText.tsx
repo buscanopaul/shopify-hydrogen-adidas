@@ -17,7 +17,7 @@ export function TwoColumnsImageText({isReserve, title, description}: Props) {
       <div className="md:w-2/4">
         <Link to={`/collections/`}>
           <div
-            className={`bg-blue-500 h-96 bg-[url('/images/home.jpg')] bg-cover bg-center `}
+            className={`bg-blue-500 h-96 bg-[url('/images/shoes.jpeg')] bg-cover bg-center `}
           />
         </Link>
       </div>

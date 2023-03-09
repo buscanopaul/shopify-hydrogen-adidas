@@ -7,9 +7,14 @@ import type {
 } from '@shopify/hydrogen/storefront-api-types';
 import {defer, type LoaderArgs} from '@shopify/remix-oxygen';
 import {Suspense} from 'react';
-import {FeaturedCollections, FeaturedProductList} from '~/components';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import {
+  Categories,
+  FeaturedCollections,
+  FeaturedProductList,
+} from '~/components';
 import {BackgroundImage} from '~/components/BackgroundImage';
-import {Categories} from '~/components/Categories/Categories';
 import {LatestStories} from '~/components/LatestStories';
 import {Title} from '~/components/Title';
 import {TwoColumnsText} from '~/components/TwoColumnsText';
@@ -125,8 +130,6 @@ export default function Homepage() {
   //   },
   // });
 
-  console.log('twt', featuredCollections);
-  console.log('aaaa', featuredProducts);
   return (
     <>
       <Title>Impossible is nothing</Title>

@@ -104,6 +104,195 @@ shop-pay-button {
 }
 
 @layer components {
+    .searchField {
+      border-bottom-color: black !important;
+    }
+    .timeline-carousel {
+      padding: 86px 6.9444% 90px 6.9444%;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        height: 100%;
+        width: 6.9444%;
+        background-color: #1d1d1e;
+        z-index: 3;
+        width: 6.9444%;
+      }
+      &:before {
+        right: 0;
+        opacity: 0;
+      }
+      .slick-list {
+        overflow: visible;
+      }
+      .slick-dots {
+        bottom: -73px;
+      }
+      h1 {
+        color: $white;
+        font-size: 46px;
+        line-height: 50pd;
+        margin-bottom: 40px;
+        font-weight: 900;
+      }
+      &__image {
+        margin-right: 30px;
+      }
+      &__item {
+        cursor: pointer;
+        .media-wrapper {
+            opacity: 0.4;
+            padding-bottom: 71.4%;
+            -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        }
+        &:last-child {
+            .timeline-carousel__item-inner {
+              &:after {
+                  width: calc(100% - 30px);
+              }
+            }
+        }
+      }
+      &__item-inner {
+        position: relative;
+        &:after {
+            position: absolute;
+            width: 100%;
+            top: 45px;
+            left: 0;
+            content: "";
+            border-bottom: 1px solid $white-20;
+        }
+        .read-more {
+            font-size: 12px;
+            color: $main-color;
+            display: table;
+            margin-bottom: 10px;
+            font-weight: 900;
+            text-decoration: none;
+            position: relative;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -1px;
+              width: 0;
+              border-bottom: 2px solid $main-color;
+              -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              -o-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+              transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            }
+            &:hover {
+              &:after {
+                  width: 100%;
+              }
+            }
+        }
+        .pointer {
+            height: 29px;
+            position: relative;
+            z-index: 1;
+            margin: -4px 0 16px;
+            &:after,
+            &:before {
+              position: absolute;
+              content: "";
+            }
+            &:after {
+              width: 9px;
+              height: 9px;
+              border-radius: 100%;
+              top: 0;
+              left: 0;
+              background-color: $main-color;
+            }
+            &:before {
+              width: 1px;
+              height: 100%;
+              top: 0;
+              left: 4px;
+              background-color: $main-color;
+            }
+        }
+      }
+  
+      .slick-active {
+        .media-wrapper {
+            opacity: 1 !important;
+        }
+      }
+  }
+  
+  .slick-dots {
+      bottom: 60px;
+      list-style: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 2;
+      li {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 6px;
+        position: relative;
+        width: 10px;
+        height: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.slick-active {
+            button {
+              background: $main-color;
+              border-color: $main-color;
+            }
+        }
+        button {
+            display: block;
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            background-color: $white-60;
+            border-color: $white-60;
+            cursor: pointer;
+            -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  
+            transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+            &:hover {
+              background: $main-color;
+              border-color: $main-color;
+            }
+        }
+      }
+  }
+  
+  
+  .link{
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:20px;
+    z-index:9999;
+    a{
+        display:flex;
+        align-items:center;
+        text-decoration:none;
+        color:#fff;
+    }
+    .fa{
+      font-size:28px;
+      margin-right:8px;
+      color:#fff;
+    }
+  }
   .article {
     h2,
     h3,

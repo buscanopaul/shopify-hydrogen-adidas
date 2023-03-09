@@ -5,6 +5,7 @@ export function LatestStories() {
   return (
     <div className="py-8 px-6 md:px-8 lg:px-12 relative">
       <Heading isItalic={false}>More from adidas stories</Heading>
+      <div className="mb-10" />
       <TwoColumnsImageText
         isReserve={false}
         title="Adidas Logos: history and meaning1"

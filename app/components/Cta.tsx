@@ -3,7 +3,7 @@ export function Cta() {
     <div className="py-8 px-6 md:px-8 lg:px-12 relative bg-black">
       <div className="md:flex items-center mb-14">
         <h2 className="uppercase font-bold text-3xl md:mb-0 mb-10">
-          Join our Adiclub & Get{' '}
+          Join our Adiclub & Get
           <span className="md:text-white text-blue-500">15% off</span>
         </h2>
         <a href="#" className="bg-white py-4 px-14 ml-20">

@@ -5,8 +5,6 @@ type Props = {
 
 export function Heading({children, isItalic}: Props) {
   return (
-    <h2 className={`uppercase text-4xl font-bold text-black mb-16`}>
-      {children}
-    </h2>
+    <h2 className={`uppercase text-4xl font-bold text-black`}>{children}</h2>
   );
 }

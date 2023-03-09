@@ -2,7 +2,7 @@ import {CategoriesItem} from './CategoriesItem';
 
 export function Categories() {
   return (
-    <div className="py-8 px-6 md:px-8 lg:px-12 relative">
+    <div className="py-8 px-6 md:px-8 lg:px-12 relative mb-10">
       <CategoriesItem title="Shoes" />
       <CategoriesItem title="Clothing" />
       <CategoriesItem title="Best Sellers" />
