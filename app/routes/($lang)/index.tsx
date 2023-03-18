@@ -133,9 +133,11 @@ export default function Homepage() {
   return (
     <>
       <Title>Impossible is nothing</Title>
-      <BackgroundImage src="https://i.ibb.co/f2LH1nK/home.jpg" />
-      <TwoColumnsText />
-
+      <BackgroundImage src="bg-[url('https://www.highsnobiety.com/static-assets/thumbor/nlg3lJmVNIvzUY0YTTcjuET90cY=/1600x960/www.highsnobiety.com/static-assets/wp-content/uploads/2021/11/09183500/zalandofeature1.jpg')]" />
+      <TwoColumnsText
+        title="Ready. Set. Gift."
+        description="WE'EVE DONE THE HARD PART FOR YOU AND ROUNDED UP GREAT GIFT IDEAS FOR EVERYONE ON YOUR LIST FROM BEST SELLERS TO REIMAGINED CLASSICS."
+      />
       {featuredCollections && (
         <Suspense>
           <Await resolve={featuredCollections}>

@@ -1,15 +1,17 @@
-import {type LoaderArgs} from '@shopify/remix-oxygen';
 import {useLoaderData} from '@remix-run/react';
 import type {ProductConnection} from '@shopify/hydrogen/storefront-api-types';
+import {type LoaderArgs} from '@shopify/remix-oxygen';
 import invariant from 'tiny-invariant';
 import {
-  PageHeader,
-  Section,
-  ProductCard,
+  BackgroundImage,
+  Button,
+  getPaginationVariables,
   Grid,
   Pagination,
-  getPaginationVariables,
-  Button,
+  ProductCard,
+  Section,
+  Title,
+  TwoColumnsText,
 } from '~/components';
 import {PRODUCT_CARD_FRAGMENT} from '~/data/fragments';
 import {getImageLoadingPriority} from '~/lib/const';
@@ -44,7 +46,14 @@ export default function AllProducts() {
 
   return (
     <>
-      <PageHeader heading="All Products" variant="allCollections" />
+      <Title>These Stripes are forever</Title>
+      <div className="px-6 md:px-8 lg:px-12">
+        <BackgroundImage src="bg-[url('https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/6DX4VWEO7T7EJ46H44DRP2J5LE.jpg')]" />
+      </div>
+      <TwoColumnsText
+        title="Our Latest Products"
+        description="Archival styles reinvented. The Adidas Adicolor is a modern take on classic adidas looks, with apparel that tells the story of the three stripes with every design."
+      />
       <Section>
         <Pagination connection={products}>
           {({
@@ -60,6 +69,7 @@ export default function AllProducts() {
           }) => {
             const itemsMarkup = nodes.map((product, i) => (
               <ProductCard
+                index={i}
                 key={product.id}
                 product={product}
                 loading={getImageLoadingPriority(i)}

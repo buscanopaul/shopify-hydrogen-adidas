@@ -1,0 +1,100 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "title": "Running Tank Top",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/80c0eaadce7b47b4a0d1af6500c86067_9366/adidas_x_Marimekko_Run_Icons_3_Bar_Logo_Running_Tank_Top_Blue_HR8191_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "2",
+            "title": "Move Training Bag",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3f70fbf268c545f8b8a2af4f010cc110_9366/adidas_x_Marimekko_Shopper_Designed_2_Move_Training_Bag_Multicolor_HR7839_02_standard.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "3",
+            "title": "Ocean Clogs",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1cdc82912124973a217af5100c7964d_9366/adidas_x_Marimekko_Aqualette_Ocean_Clogs_White_HP6730_02_standard_hover.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "4",
+            "title": "Superstar Shoes",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dd939a716e9844f78abfaf8800e9c591_9366/adidas_x_Marimekko_Superstar_Shoes_White_HP9779_04_standard.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "5",
+            "title": "Optime Training Tights",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7b051c94b51a494fbd79af7401080a8c_9366/adidas_x_Marimekko_Optime_Training_7-8_Tights_Blue_HR8180_25_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "6",
+            "title": "3-Stripes Tee",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e7b93b10bbe442d58cbdaf6300c02acd_9366/adidas_x_Marimekko_Run_Icons_3-Stripes_Tee_White_HR8183_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "7",
+            "title": "Aeroimpact Training Support Bra",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/15cf824f30ae4d108ba3af9e003add5c_9366/adidas_x_Marimekko_Aeroimpact_Training_Light-Support_Bra_Blue_IC6390_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "8",
+            "title": "Shopper Designed Training Bag",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fe38387b5b442719a07af72011d7a56_9366/adidas_x_Marimekko_Shopper_Designed_2_Move_Training_Bag_Multicolor_HZ4398_02_standard.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "9",
+            "title": "Running Pocket Bra",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/07c935d7b66b490bad67af6500d41188_9366/adidas_x_Marimekko_Running_Pocket_Bra_Brown_HR8171_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "10",
+            "title": "Future Icons Sweatshirt",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/3453ed6e9aec460c9a64af73012cbf6c_9366/adidas_x_Marimekko_Future_Icons_3-Stripes_Sweatshirt_White_IC6351_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "11",
+            "title": "NMD_R1 Shoes",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/432685ae1fec4788abf3af8800e9eb6b_9366/NMD_R1_Shoes_Black_HP9780_01_standard.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "12",
+            "title": "Optime Training 7/8 tights",
+            "url": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/50b24a50261f422bb5faaf740107a4cd_9366/adidas_x_Marimekko_Optime_Training_7-8_Tights_Black_HR8179_21_model.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        }
+    ]
+}

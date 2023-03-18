@@ -59,13 +59,13 @@ export function FeaturedProductList() {
           <Slider {...settings}>
             <div className="timeline-carousel__item">
               <div className="timeline-carousel__image">
-                <Link to={`/products/the-full-stack`}>
+                <Link to={`/products`}>
                   <div className="media-wrapper media-wrapper--overlay bg-[#E7EFF9] bg-[url('https://sneakernews.com/wp-content/uploads/2023/02/adidas-ultraboost-valentines-day-2023-HQ3857-3.jpg')] bg-cover bg-center"></div>
                 </Link>
               </div>
               <div className="timeline-carousel__item-inner mr-8">
                 <Link
-                  to={`/products/the-full-stack`}
+                  to={`/products`}
                   className="flex items-center justify-between text-black font-bold text-xl pt-5 mb-1"
                 >
                   <h4>Forum 84 Camp Low Shoes</h4>

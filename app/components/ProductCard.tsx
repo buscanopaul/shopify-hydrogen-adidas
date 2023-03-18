@@ -11,6 +11,7 @@ import clsx from 'clsx';
 import {AddToCartButton, Link, Text} from '~/components';
 import {getProductPlaceholder} from '~/lib/placeholders';
 import {isDiscounted, isNewArrival} from '~/lib/utils';
+import data from '../data/products.json';
 
 export function ProductCard({
   product,
@@ -19,8 +20,10 @@ export function ProductCard({
   loading,
   onClick,
   quickAdd,
+  index,
 }: {
   product: SerializeFrom<Product>;
+  index: number;
   label?: string;
   className?: string;
   loading?: HTMLImageElement['loading'];
@@ -77,7 +80,7 @@ export function ProductCard({
                   width: 320,
                   height: 400,
                 }}
-                data={image}
+                data={data.products[index]}
                 alt={image.altText || `Picture of ${product.title}`}
                 loading={loading}
               />
@@ -92,13 +95,14 @@ export function ProductCard({
           </div>
           <div className="grid gap-1">
             <Text
-              className="w-full overflow-hidden whitespace-nowrap text-ellipsis "
+              className="w-full overflow-hidden whitespace-nowrap text-ellipsis text-black"
               as="h3"
             >
-              {product.title}
+              {/* {product.title} */}
+              {data.products[index].title}
             </Text>
             <div className="flex gap-4">
-              <Text className="flex gap-4">
+              <Text className="flex gap-4 text-gray-400">
                 <Money withoutTrailingZeros data={price!} />
                 {isDiscounted(price as MoneyV2, compareAtPrice as MoneyV2) && (
                   <CompareAtPrice

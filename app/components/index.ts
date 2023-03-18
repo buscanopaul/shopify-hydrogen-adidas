@@ -1,6 +1,7 @@
 export { AccountAddressBook } from './AccountAddressBook';
 export { AccountDetails } from './AccountDetails';
 export { AddToCartButton } from './AddToCartButton';
+export { BackgroundImage } from './BackgroundImage';
 export { Button } from './Button';
 export { Cart } from './Cart';
 export { CartLoading } from './CartLoading';
