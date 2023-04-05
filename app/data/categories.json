@@ -1,0 +1,40 @@
+{
+    "categories": [
+        {
+            "id": "1",
+            "title": "Shoes",
+            "description": "Celebrating self-expression through movement and iconic shoes.",
+            "url": "https://footwearnews.com/wp-content/uploads/2023/02/adidas-valentines-day.jpg?w=911",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "2",
+            "title": "Men",
+            "description": "We’re even better together. Tap into the collective connection.",
+            "url": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/men-outdoor-iwp-jackets-d_tcm221-592085.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "3",
+            "title": "Women",
+            "description": "30 years of iconic legacy.",
+            "url": "https://media.voguebusiness.com/photos/61f7fc3ce8b98624842f6805/2:3/w_2560%2Cc_limit/adidas-voguebus-adidas-jan-21-story.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "4",
+            "title": "Kids",
+            "description": "Play & connect comfort and classic minimalism.",
+            "url": "https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enPH/Images/core-ss23-monofit-global-launch-hp-tcc-hero-m_tcm184-976259.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        }
+    ]
+}

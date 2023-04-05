@@ -1,50 +1,50 @@
-import {type ReactNode, useRef, Suspense, useMemo} from 'react';
 import {Disclosure, Listbox} from '@headlessui/react';
-import {defer, type LoaderArgs} from '@shopify/remix-oxygen';
 import {
-  useLoaderData,
   Await,
-  useSearchParams,
+  useLoaderData,
   useLocation,
+  useSearchParams,
   useTransition,
 } from '@remix-run/react';
 import {
   AnalyticsPageType,
+  flattenConnection,
   Money,
   ShopifyAnalyticsProduct,
   ShopPayButton,
-  flattenConnection,
-  type SeoHandleFunction,
   type SeoConfig,
+  type SeoHandleFunction,
 } from '@shopify/hydrogen';
+import type {
+  MediaConnection,
+  MediaImage,
+  Product as ProductType,
+  ProductConnection,
+  ProductVariant,
+  SelectedOptionInput,
+  Shop,
+} from '@shopify/hydrogen/storefront-api-types';
+import {defer, type LoaderArgs} from '@shopify/remix-oxygen';
+import clsx from 'clsx';
+import {Suspense, useMemo, useRef, type ReactNode} from 'react';
+import type {Product} from 'schema-dts';
+import invariant from 'tiny-invariant';
 import {
+  AddToCartButton,
   Heading,
   IconCaret,
   IconCheck,
   IconClose,
+  Link,
   ProductGallery,
   ProductSwimlane,
   Section,
   Skeleton,
   Text,
-  Link,
-  AddToCartButton,
 } from '~/components';
-import {getExcerpt} from '~/lib/utils';
-import invariant from 'tiny-invariant';
-import clsx from 'clsx';
-import type {
-  ProductVariant,
-  SelectedOptionInput,
-  Product as ProductType,
-  Shop,
-  ProductConnection,
-  MediaConnection,
-  MediaImage,
-} from '@shopify/hydrogen/storefront-api-types';
 import {MEDIA_FRAGMENT, PRODUCT_CARD_FRAGMENT} from '~/data/fragments';
 import type {Storefront} from '~/lib/type';
-import type {Product} from 'schema-dts';
+import {getExcerpt} from '~/lib/utils';
 
 const seo: SeoHandleFunction<typeof loader> = ({data}) => {
   const media = flattenConnection<MediaConnection>(data.product.media).find(
@@ -137,15 +137,17 @@ export default function Product() {
           <div className="sticky md:-mb-nav md:top-nav md:-translate-y-nav md:h-screen md:pt-nav hiddenScroll md:overflow-y-scroll">
             <section className="flex flex-col w-full max-w-xl gap-8 p-6 md:mx-auto md:max-w-sm md:px-0">
               <div className="grid gap-2">
-                <Heading as="h1" className="whitespace-normal">
+                <Heading as="h1" className="whitespace-normal text-black">
                   {title}
                 </Heading>
                 {vendor && (
-                  <Text className={'opacity-50 font-medium'}>{vendor}</Text>
+                  <Text className={'opacity-50 font-medium text-black'}>
+                    {vendor}
+                  </Text>
                 )}
               </div>
               <ProductForm />
-              <div className="grid gap-4 py-4">
+              <div className="grid gap-4 py-4 text-black">
                 {descriptionHtml && (
                   <ProductDetail
                     title="Product Details"
@@ -248,7 +250,7 @@ export function ProductForm() {
           searchParamsWithDefaults={searchParamsWithDefaults}
         />
         {selectedVariant && (
-          <div className="grid items-stretch gap-4">
+          <div className="grid items-stretch gap-4 text-black">
             <AddToCartButton
               lines={[
                 {
@@ -312,9 +314,13 @@ function ProductOptions({
         .map((option) => (
           <div
             key={option.name}
-            className="flex flex-col flex-wrap mb-4 gap-y-2 last:mb-0"
+            className="flex flex-col flex-wrap mb-4 gap-y-2 last:mb-0 text-gray-400"
           >
-            <Heading as="legend" size="lead" className="min-w-[4rem]">
+            <Heading
+              as="legend"
+              size="lead"
+              className="min-w-[4rem] text-black"
+            >
               {option.name}
             </Heading>
             <div className="flex flex-wrap items-baseline gap-4">
@@ -347,7 +353,7 @@ function ProductOptions({
                         </Listbox.Button>
                         <Listbox.Options
                           className={clsx(
-                            'border-primary bg-contrast absolute bottom-12 z-30 grid h-48 w-full overflow-y-scroll rounded-t border px-2 py-2 transition-[max-height] duration-150 sm:bottom-auto md:rounded-b md:rounded-t-none md:border-t-0 md:border-b',
+                            'border-primary text-black bg-contrast absolute bottom-12 z-30 grid h-48 w-full overflow-y-scroll rounded-t border px-2 py-2 transition-[max-height] duration-150 sm:bottom-auto md:rounded-b md:rounded-t-none md:border-t-0 md:border-b',
                             open ? 'max-h-48' : 'max-h-0',
                           )}
                         >
@@ -361,7 +367,7 @@ function ProductOptions({
                                   optionName={option.name}
                                   optionValue={value}
                                   className={clsx(
-                                    'text-primary w-full p-2 transition rounded flex justify-start items-center text-left cursor-pointer',
+                                    'text-black w-full p-2 transition rounded flex justify-start items-center text-left cursor-pointer',
                                     active && 'bg-primary/10',
                                   )}
                                   searchParams={searchParamsWithDefaults}
@@ -466,7 +472,7 @@ function ProductDetail({
       {({open}) => (
         <>
           <Disclosure.Button className="text-left">
-            <div className="flex justify-between">
+            <div className="flex justify-between text-black">
               <Text size="lead" as="h4">
                 {title}
               </Text>
@@ -481,7 +487,7 @@ function ProductDetail({
 
           <Disclosure.Panel className={'pb-4 pt-2 grid gap-2'}>
             <div
-              className="prose dark:prose-invert"
+              className="prose dark:prose-invert text-gray-400"
               dangerouslySetInnerHTML={{__html: content}}
             />
             {learnMore && (

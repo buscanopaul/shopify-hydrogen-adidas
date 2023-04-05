@@ -1,0 +1,68 @@
+{
+    "collections": [
+        {
+            "id": "1",
+            "title": "Disruptive Elegance",
+            "url": "https://cdn.sanity.io/images/c1chvb1i/production/ba8ede0b0ede24e8ab8e351b4390b7f97678f085-1200x802.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "2",
+            "title": "Original",
+            "url": "https://www.adidas.co.za/on/demandware.static/-/Sites-adidas-navigation-za/default/dwe0fe72d5/SUPERSTAR.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "3",
+            "title": "Lourdes Leon",
+            "url": "https://images-prod.dazeddigital.com/900/azure/dazed-prod/1290/5/1295110.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "4",
+            "title": "Adidas x Bored Ape",
+            "url": "https://static.dezeen.com/uploads/2021/12/adidas-originals-into-the-metaverse-nft-collection-design_dezeen_2364_hero.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "5",
+            "title": "Ivy Park Rodeo",
+            "url": "https://assets.teenvogue.com/photos/611f9a1670d7b312d760d639/16:9/w_2560%2Cc_limit/originals-ss21-IVP4-publiclaunch-clp-1-masthead-d_tcm221-737656.jpeg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "6",
+            "title": "Donald Glover",
+            "url": "https://assets.vogue.com/photos/5cb8b093c2de7d2f0c14a10f/master/w_2560%2Cc_limit/DonaldGlover_adidas%2520Originals-1%2520(EMBARGO%2520APRIL%252018%25209AM%2520PST).jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "7",
+            "title": "Noah Fall",
+            "url": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/640x480/598575.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "8",
+            "title": "Gucci",
+            "url": "https://media.gq-magazine.co.uk/photos/627a55077d7f9a6cabdf40aa/4:3/w_1991,h_1493,c_limit/PR_Crop_150dpi_M_Look_18_19.jpeg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        }
+    ]
+}

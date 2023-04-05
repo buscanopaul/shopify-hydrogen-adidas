@@ -1,0 +1,58 @@
+{
+    "newArrivals": [
+        {
+            "id": "1",
+            "title": "Men's range",
+            "url": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/f18b52eaee31466f9cc4af87013e444f_9366/treziod-2.0-shoes.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        },
+        {
+            "id": "2",
+            "title": "Men's range",
+            "url": "https://cdn.shopify.com/s/files/1/0077/7741/9322/products/501f90ce463c492b8ba9ae0400f5b19b_9366_1024x1024.jpg?v=1669649362",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        },
+        {
+            "id": "3",
+            "title": "Men's range",
+            "url": "https://cdn.shopify.com/s/files/1/0077/7741/9322/products/501f90ce463c492b8ba9ae0400f5b19b_9366_1024x1024.jpg?v=1669649362",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        },
+        {
+            "id": "4",
+            "title": "Men's range",
+            "url": "https://cdn.shopify.com/s/files/1/0077/7741/9322/products/501f90ce463c492b8ba9ae0400f5b19b_9366_1024x1024.jpg?v=1669649362",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        },
+        {
+            "id": "5",
+            "title": "Men's range",
+            "url": "https://cdn.shopify.com/s/files/1/0077/7741/9322/products/501f90ce463c492b8ba9ae0400f5b19b_9366_1024x1024.jpg?v=1669649362",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        },
+        {
+            "id": "6",
+            "title": "Men's range",
+            "url": "https://cdn.shopify.com/s/files/1/0077/7741/9322/products/501f90ce463c492b8ba9ae0400f5b19b_9366_1024x1024.jpg?v=1669649362",
+            "altText": null,
+            "width": 3908,
+            "height": 3908,
+            "price": 321
+        }
+    ]
+}

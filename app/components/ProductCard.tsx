@@ -11,7 +11,6 @@ import clsx from 'clsx';
 import {AddToCartButton, Link, Text} from '~/components';
 import {getProductPlaceholder} from '~/lib/placeholders';
 import {isDiscounted, isNewArrival} from '~/lib/utils';
-import data from '../data/products.json';
 
 export function ProductCard({
   product,
@@ -80,7 +79,8 @@ export function ProductCard({
                   width: 320,
                   height: 400,
                 }}
-                data={data.products[index]}
+                // data={data.products[index]}
+                data={image}
                 alt={image.altText || `Picture of ${product.title}`}
                 loading={loading}
               />
@@ -98,8 +98,8 @@ export function ProductCard({
               className="w-full overflow-hidden whitespace-nowrap text-ellipsis text-black"
               as="h3"
             >
-              {/* {product.title} */}
-              {data.products[index].title}
+              {product.title}
+              {/* {data.products[index].title} */}
             </Text>
             <div className="flex gap-4">
               <Text className="flex gap-4 text-gray-400">

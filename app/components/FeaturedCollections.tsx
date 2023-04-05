@@ -2,6 +2,7 @@ import {Image} from '@shopify/hydrogen';
 import type {Collection} from '@shopify/hydrogen/storefront-api-types';
 import type {SerializeFrom} from '@shopify/remix-oxygen';
 import {Grid, Heading, Link, Section, Text} from '~/components';
+import data from '../data/categories.json';
 
 export function FeaturedCollections({
   collections,
@@ -20,7 +21,7 @@ export function FeaturedCollections({
   return (
     <Section {...props} heading={title}>
       <Grid items={items} className="md:grid-cols-2 lg:grid-cols-4 grid-cols-1">
-        {collections.map((collection) => {
+        {collections.map((collection, i) => {
           // if (!collection?.image) {
           //   return null;
           // }
@@ -31,7 +32,7 @@ export function FeaturedCollections({
                   {collection?.image && (
                     <Image
                       alt={`Image of ${collection.title}`}
-                      data={collection.image}
+                      data={data.categories[i]}
                       height={600}
                       sizes="(max-width: 32em) 100vw, 33vw"
                       width={600}
@@ -47,12 +48,14 @@ export function FeaturedCollections({
                   size="copy"
                   className="uppercase text-black text-2xl font-bold"
                 >
-                  {collection.title}
+                  {/* {collection.title} */}
+                  {data.categories[i].title}
                 </Heading>
                 <Text className="pr-10 text-black line-clamp-2">
-                  {collection?.image && collection?.image?.altText
+                  {/* {collection?.image && collection?.image?.altText
                     ? collection?.image.altText
-                    : 'Stock up on hats, socks, and more so you can gift 3-stripes to everyone this season'}
+                    : 'Stock up on hats, socks, and more so you can gift 3-stripes to everyone this season'} */}
+                  {data.categories[i].description}
                 </Text>
                 <div className="flex flex-row items-center mb-20">
                   <Heading

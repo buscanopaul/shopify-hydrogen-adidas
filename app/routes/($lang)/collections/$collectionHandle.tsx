@@ -1,17 +1,17 @@
-import {json, type LoaderArgs} from '@shopify/remix-oxygen';
 import {useLoaderData} from '@remix-run/react';
+import {
+  AnalyticsPageType,
+  flattenConnection,
+  type SeoHandleFunction,
+} from '@shopify/hydrogen';
 import type {
   Collection as CollectionType,
   CollectionConnection,
   Filter,
 } from '@shopify/hydrogen/storefront-api-types';
-import {
-  flattenConnection,
-  AnalyticsPageType,
-  type SeoHandleFunction,
-} from '@shopify/hydrogen';
+import {json, type LoaderArgs} from '@shopify/remix-oxygen';
 import invariant from 'tiny-invariant';
-import {PageHeader, Section, Text, SortFilter} from '~/components';
+import {BackgroundImage, Section, SortFilter, Title} from '~/components';
 import {ProductGrid} from '~/components/ProductGrid';
 import {PRODUCT_CARD_FRAGMENT} from '~/data/fragments';
 
@@ -160,17 +160,10 @@ export default function Collection() {
 
   return (
     <>
-      <PageHeader heading={collection.title}>
-        {collection?.description && (
-          <div className="flex items-baseline justify-between w-full">
-            <div>
-              <Text format width="narrow" as="p" className="inline-block">
-                {collection.description}
-              </Text>
-            </div>
-          </div>
-        )}
-      </PageHeader>
+      <Title>{collection.title}</Title>
+      <div className="px-6 md:px-8 lg:px-12">
+        <BackgroundImage src="bg-[url('https://assets.teenvogue.com/photos/604250bcdab5de03525e07b1/16:9/w_2560%2Cc_limit/bp-adidas.jpg')]" />
+      </div>
       <Section>
         <SortFilter
           filters={collection.products.filters as Filter[]}

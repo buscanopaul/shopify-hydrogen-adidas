@@ -1,0 +1,31 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "title": "TRAIL RUNNING SHOES VS. HIKING SHOES",
+            "description": "These shoes were made for trekkin’. Check out our hiking shoe guide and decide whether trail runners or hiking shoes are going with you on your next adventure.",
+            "url": "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/trail-running-vs-hiking-shoes-mh-d_221-1000452.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "2",
+            "title": "ADIDAS HAT SIZE GUIDE",
+            "description": "Curious about what hat size you wear? Use our adidas hat size chart to determine your ideal cap size.",
+            "url": "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/adidas-hat-size-masthead-d_221-990755.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        },
+        {
+            "id": "3",
+            "title": "THE ADIDAS SAMBA",
+            "description": "Discover classic adidas heritage through the fit and feel of the one and only Samba.",
+            "url": "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enUS/Images/samba-size-guide-masthead-d_221-982556.jpg",
+            "altText": null,
+            "width": 3908,
+            "height": 3908
+        }
+    ]
+}

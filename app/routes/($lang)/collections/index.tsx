@@ -1,20 +1,22 @@
-import {json, type MetaFunction, type LoaderArgs} from '@shopify/remix-oxygen';
 import {useLoaderData} from '@remix-run/react';
 import type {
   Collection,
   CollectionConnection,
 } from '@shopify/hydrogen/storefront-api-types';
+import {json, type LoaderArgs, type MetaFunction} from '@shopify/remix-oxygen';
 import {
+  BackgroundImage,
+  Button,
+  getPaginationVariables,
   Grid,
   Heading,
-  PageHeader,
-  Section,
   Link,
   Pagination,
-  getPaginationVariables,
-  Button,
+  Section,
+  Title,
 } from '~/components';
 import {getImageLoadingPriority} from '~/lib/const';
+import data from '../../../data/collections.json';
 
 const PAGINATION_SIZE = 8;
 
@@ -50,7 +52,10 @@ export default function Collections() {
 
   return (
     <>
-      <PageHeader heading="Collections" />
+      <Title>Collections</Title>
+      <div className="px-6 md:px-8 lg:px-12">
+        <BackgroundImage src="bg-[url('https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enUS/Images/style-fw22-superstar-alwayson-launch-pdp-dual-storytab-d_tcm221-943677.jpg')]" />
+      </div>
       <Section>
         <Pagination connection={collections}>
           {({
@@ -87,11 +92,12 @@ export default function Collections() {
                 </div>
               )}
               <Grid
-                items={nodes.length === 3 ? 3 : 2}
+                items={nodes.length === 3 ? 3 : 3}
                 data-test="collection-grid"
               >
                 {nodes.map((collection, i) => (
                   <CollectionCard
+                    index={i}
                     collection={collection as Collection}
                     key={collection.id}
                     loading={getImageLoadingPriority(i, 2)}
@@ -131,17 +137,19 @@ export default function Collections() {
 function CollectionCard({
   collection,
   loading,
+  index,
 }: {
   collection: Collection;
   loading?: HTMLImageElement['loading'];
+  index: number;
 }) {
   return (
     <Link to={`/collections/${collection.handle}`} className="grid gap-4">
-      <div className="card-image bg-primary/5 aspect-[3/2]">
+      <div className="card-image bg-primary/5 aspect-[3/3] bg-gray-100">
         {collection?.image && (
           <img
             alt={collection.title}
-            src={collection.image.url}
+            src={data.collections[index].url}
             height={400}
             sizes="(max-width: 32em) 100vw, 33vw"
             width={600}
@@ -149,8 +157,9 @@ function CollectionCard({
           />
         )}
       </div>
-      <Heading as="h3" size="copy">
+      <Heading as="h3" size="copy" className="text-black">
         {collection.title}
+        {/* {data.collections[index].title} */}
       </Heading>
     </Link>
   );
